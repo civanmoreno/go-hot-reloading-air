@@ -1,0 +1,9 @@
+# .air.toml
+[build]
+cmd = "go build -o ./tmp/main ."
+bin = "./tmp/main"
+
+watch_dir = ["./"]
+exclude_dir = ["vendor"]
+
+port = 8080
