@@ -35,3 +35,13 @@ RUN go mod download
 RUN mkdir -p /app/tmp
 
 CMD ["air", "-c", ".air.toml"]
+
+### Explicación de los Comandos Agregados:
+
+- **docker build -t go-app .**: Construye la imagen del proyecto con el nombre `go-app`.
+- **docker-compose up**: Ejecuta la aplicación, construyendo la imagen si no existe y levantando el contenedor.
+- **docker-compose down**: Detiene y elimina el contenedor.
+- **docker-compose up -d**: Ejecuta la aplicación en segundo plano.
+- **docker start <nombre_contenedor>**: Inicia un contenedor previamente detenido.
+- **docker-compose logs**: Muestra los logs del contenedor en ejecución.
+- **docker-compose logs -f**: Sigue los logs en tiempo real.
