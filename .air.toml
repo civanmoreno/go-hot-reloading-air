@@ -5,5 +5,5 @@ bin = "./tmp/main"
 
 watch_dir = ["./"]
 exclude_dir = ["vendor"]
-
+poll = true
 port = 8080
